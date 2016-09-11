@@ -1,0 +1,5 @@
+g++ -std=c++11 pieces.cpp -c
+g++ -std=c++11 board.cpp -c
+g++ -std=c++11 db.cpp -c
+g++ -std=c++11 chess-player.cpp pieces.o board.o db.o -o chess
+g++ -std=c++11 tests.cpp pieces.o board.o db.o -o tests
